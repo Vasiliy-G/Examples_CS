@@ -4,15 +4,17 @@
 //78 -> третьей цифры нет
 //32679 -> 6
 
-//int number = new Random().Next(1, 300);
-int number = 123456;
-if (number < 100)
+//int number = new Random().Next(1, 100000);
+Console.Write("Введите число: ");
+string strInput = Console.ReadLine();
+
+if(strInput.Length <= 2)
 {
-    Console.WriteLine($"Число {number} двухзначное, в числе нет третей цифры.");
+    Console.WriteLine($"В числе {strInput} нет третей цифры.");
 }
 
 else
 {
-    int number3 = number % 10;  // третья цифра трехзначного числа
-Console.WriteLine($"Третья цифра числа {number} = {number3}");
+    Console.WriteLine($"Третья цифра числа {strInput} = {strInput[2]}");
 }
+
