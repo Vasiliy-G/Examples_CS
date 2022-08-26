@@ -57,3 +57,4 @@ else
     Console.WriteLine("Решение способом №2:");
     MethodTwo(number);  
 }
+
